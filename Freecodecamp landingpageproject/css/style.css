@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: monospace 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+.container{
+    width: 80%;
+}
+
+/* Navbar */
+
+nav{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.right li{
+    background-color:black;
+    
+}
+
+.right li a{
+color:#424242 }
+
+nav  .brand-logo img{
+    height: 40px;
+    margin-top: 10px;
+}
+
+
+
+
+#mobile-demo{
+    background-color: black;
+    padding-top: 35%;
+
+}    
+
+#mobile-demo li {
+    background-color: black;
+    padding: 30px;
+}
+
+#mobile-demo li a{
+    color: #00adef;
+
+}
+
+ /* Header */
+
+ /* video */
+ .bg-vid{
+   
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+    
+ }
+
+ #bg-vid{
+     min-width: 100%;
+     height: 100vh;
+ }
+
+ #bg-vid{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    background-color: black;
+    
+ }
+
+ .header-content{
+     height: 72vh;
+ }
+
+ .swing-in-top-fwd {
+     color: white;
+     font-size: 3.5rem;
+     text-align: center;
+     font-family: 'Orbitron', sans-serif;
+     text-transform: uppercase;
+     margin-top: 130px;
+     
+
+ }
+ .p-tag{
+     font-size: 1.5rem;
+     line-height: 2.5;
+     margin: 0;
+ }
+
+ /* About */
+
+
+    
+
+.section{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    
+}
+.section .top h2{
+    text-align: center;
+    margin-top: 280px;
+}
+.section .top p{
+    text-align: center;
+}
+
+.div .row .container p{
+    text-align: center;
+    margin-top: 150px;
+
+}
+
+.section h2{
+    text-align: center;
+    margin-top: 200px;
+}
+
+
+
+#right-tag{
+    text-align: justify;
+    margin-top: 35%;
+    margin-left:20%;
+    margin-right: 20%;
+}
+
+.down{
+    background-color: black;
+}
+
+
+/* concept-car  / Gallery */
+
+#concept-car-img{
+    width: 100%;
+}
+
+#gallery{
+    width: 100%;
+    height: 100vh;
+}
+.carousel{
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 100vh;;
+    
+}
+
+#gallery > div > a.carousel-item.active{
+    width: 80%;
+    height: auto;
+   
+}
+
+#gallery > div > a:nth-child(4){
+    width: 100%;
+    height: auto;
+}
+#gallery > div > a:nth-child(3){
+    width: 100%;
+    height: auto;
+}
+#gallery > div > a:nth-child(2){
+    width: 100%;
+    height: auto;
+}
+#gallery > div > a:nth-child(1){
+    width: 100%;
+    height: auto;
+}
+
+/* contact */
+
+#contact > div > div:nth-child(1) > h4{
+    color:#424242 ;
+    text-align: center;
+}
+
+#contact > div{
+    width: 100%;
+    height: 100vh;
+}
+
+#contact > div > div.row.container.right-container.down > form > button{
+    background-color: #00adef;
+}
+
+#contact > div > div.row.container.right-container.down > form{
+    margin-top: 20%;
+}
+
+#contact > div > div:nth-child(1) > img{
+    width: 100%;
+    height:50vh;
+}
+
+/* footer */
+
+body > footer{
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #about > div > div > h2{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #contact > div > div:nth-child(1) > img{
+        height:100px;
+    }
+
+    #gallery > div > a.carousel-item.active > img{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+
+
+
+
+/* keyframes */
+
+.swing-in-top-fwd {
+	-webkit-animation: swing-in-top-fwd 6s cubic-bezier(0.175, 0.885, 0.320, 1.275) forwards;
+	        animation: swing-in-top-fwd 6s cubic-bezier(0.175, 0.885, 0.320, 1.275) forwards;
+}
+
+
+ @-webkit-keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  @keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  
